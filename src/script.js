@@ -25,7 +25,6 @@ function showEpisodeCards(episodes) {
   btnMain[0].classList.add("active");
   btnMain[1].classList.remove("active");
   btnMain[2].classList.remove("active");
-  console.log(episodes);
 
   // Create cards for each element & add to container
   episodes.results.forEach((episode) => {
@@ -52,7 +51,6 @@ function showEpisodeCards(episodes) {
 
 // SHOW EPISODE DETAILS
 function showEpisodeDetails(episode, episodes) {
-  console.log(episode);
   detailsContainer.classList.remove("hidden");
   cardsContainer.innerHTML = "";
 
@@ -109,7 +107,6 @@ function fetchCharactersByEpisodes(episode) {
 // SHOW CHARACTER CARDS BY EPISODE
 function showCharacterCardsByEpisode(characters) {
   cardsContainer.innerHTML = "";
-  console.log(characters);
 
   // Create cards for each element & add to container
   characters.forEach((character) => {
@@ -155,7 +152,6 @@ function showCharacterCards(characters) {
   btnMain[0].classList.remove("active");
   btnMain[1].classList.add("active");
   btnMain[2].classList.remove("active");
-  console.log(characters);
 
   // Create cards for each element & add to container
   characters.results.forEach((character) => {
@@ -182,7 +178,6 @@ function showCharacterCards(characters) {
 
 // SHOW CHARACTER DETAILS
 function showCharacterDetails(character, characters) {
-  console.log(character);
   detailsContainer.classList.remove("hidden");
   cardsContainer.innerHTML = "";
   
@@ -245,7 +240,6 @@ function fetchCharactersByLocation(location) {
 // SHOW CHARACTER CARDS BY LOCATION
 function showCharacterCardsByLocation(characters) {
   cardsContainer.innerHTML = "";
-  console.log(characters);
 
   // Create cards for each element & add to container
   characters.forEach((character) => {
@@ -291,7 +285,6 @@ function showLocationCards(locations) {
   btnMain[0].classList.remove("active");
   btnMain[1].classList.remove("active");
   btnMain[2].classList.add("active");
-  console.log(locations);
 
   // Create cards for each element & add to container
   locations.results.forEach((location) => {
@@ -322,7 +315,6 @@ function showLocationCards(locations) {
 
 // SHOW LOCATION DETAILS
 function showLocationDetails(location, locations) {
-  console.log(location);
   detailsContainer.classList.remove("hidden");
   cardsContainer.innerHTML = "";
 
